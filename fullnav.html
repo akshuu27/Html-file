@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: aqua;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0px;
+            margin: 15px;
+            display: inline-block;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            text-decoration: none;
+            padding:5px ;
+            background-color: darkblue;
+            color: antiquewhite;
+            border:1px solid white;
+            margin: 4px;
+        }
+         li.dropdown{
+             display: inline-block;
+
+        }
+        .dropdown-content{
+            position: absolute;
+            /* display:none ; */
+            
+        } 
+        .dropdown-content a{
+            background-color:darkslateblue;
+            border:2px solid black ;
+            text-decoration: none;
+            display: block;
+            text-align:left;
+            margin:4px ;
+            padding: 10px;
+        }
+        li a:hover{
+            background-color: darkgoldenrod;
+            color: darkred;
+        }
+        li.dropdown a.drpbtn:hover{
+            background-color: aqua;
+            color: black;
+        }
+         li.dropdown:hover.dropdown-content{
+             
+            display: block;
+
+         }
+         li.dropdown a.drpbtn{
+            background-color: darkslateblue;
+         }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li><a href="" target="_blank">Home</a></li>
+            <li><a href="" target="_blank">About us</a></li>
+            <li><a href="" target="_blank">contact us</a></li>
+            <li class="dropdown"><a href="" target="_blank" class="drpbtn">sale</a>
+                  <div class="dropdown-content">
+                      <a href="" style="margin-top: 15px;">Electronic sale</a> 
+                      <a href=""> Home and furniture</a>
+                      <a href="">Book store</a>
+                  </div>
+
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>
